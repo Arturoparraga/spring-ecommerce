@@ -1,7 +1,15 @@
 package com.example.ecommerce.model;
 
+import jakarta.persistence.*;
+
+import java.util.List;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
     private String username;
@@ -10,6 +18,12 @@ public class Usuario {
     private String direccion;
     private String telefono;
     private String tipo;
+
+    @OneToMany(mappedBy = "usuario")
+    private List<Producto> productosList;
+
+    @OneToMany(mappedBy = "usuario")
+    private List<Orden> ordenesList;
 
 
     public Usuario() {
@@ -88,5 +102,21 @@ public class Usuario {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public List<Producto> getProductosList() {
+        return productosList;
+    }
+
+    public void setProductosList(List<Producto> productosList) {
+        this.productosList = productosList;
+    }
+
+    public List<Orden> getOrdenesList() {
+        return ordenesList;
+    }
+
+    public void setOrdenesList(List<Orden> ordenesList) {
+        this.ordenesList = ordenesList;
     }
 }
