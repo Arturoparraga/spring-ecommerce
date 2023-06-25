@@ -1,0 +1,223 @@
+/* #redes a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+} */
+
+/* #cont {
+    border-radius: 10px;
+} */
+body {
+    background-color: #272727;
+}
+
+#back-top {
+    /* color: green; */
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    left: 1%;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+#back-top svg {
+    width: 2em;
+    height: 2em;
+}
+
+a svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#box-search {
+    list-style: none;
+    position: fixed;
+    top: 165px;
+
+    width: 1200px;
+    background-color: wheat ;
+    z-index: 2;
+}
+
+#box-search button {
+    border-radius: 4px;
+    border: none;
+}
+
+#contacto {
+	color:white;
+	pointer-events: none;
+	cursor: default;
+}
+
+.navv {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:1;
+}
+
+#nav, #footer {
+    background-color: #101010;
+}
+a {
+    color: orangered;
+}
+
+#ultimoJuego {
+    border-radius: 7px;
+    border: none;
+    background-color: white
+}
+
+h2 {
+    text-align: center;
+}
+
+.btnJuego {
+    border: solid 1px #ff5400;
+    color: #ff5400;
+}
+
+.btnJuego:hover {
+    background-color:#ff5400;
+    color: white;
+}
+
+.btnAceptar {
+    background-color:#ff5400;
+    color: white;
+}
+
+.btnAceptar:hover {
+    background-color:#ff9100;
+    color: white;
+}
+
+#carta {
+    /* border: 1px solid #ff5400; */
+    background-color: #3d3d3d;
+    color: white;
+}
+
+#cajaUltimoJuego {
+    background-color: #3d3d3d;
+    /* border: 1px solid red; */
+}
+
+#ultimoJuego {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+#contenedor-ultimoJuego {
+    text-align: center;
+}
+
+.contenedor-cookies {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: auto;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.info-cookies {
+    margin-top: 24%;
+    background-color: white;
+    width: 60%;
+    height: 30%;
+    max-width: 100%;
+    min-height: 35%;
+    padding: 30px 50px;
+    border-radius: 8px;
+    text-align: justify;
+    box-sizing: content-box;
+}
+
+.encabezado-cookies {
+    display: flex;
+    justify-content: space-between;
+}
+
+#titulo {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 2560px) {
+    .info-cookies {
+        background-color: white;
+        width: 36%;
+        max-width: 100%;
+        height: 19%;
+        min-height: 19%;
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .info-cookies {
+        background-color: white;
+        width: 60%;
+        max-width: 100%;
+        height: 30%;
+        min-height: 30%;
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .info-cookies {
+        background-color: white;
+        width: 66%;
+        max-width: 100%;
+        height: 39%;
+        min-height: 39%;
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info-cookies {
+        background-color: white;
+        width: 75%;
+        max-width: 100%;
+        height: 39%;
+        min-height: 39%;
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .info-cookies {
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        height: 49%;
+        min-height: 49%;
+        padding: 30px 50px;
+        border-radius: 8px;
+        text-align: justify;
+    }
+}
