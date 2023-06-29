@@ -11,7 +11,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" style="color: #ff5400;" id="titulo" href="#">
+                    <a class="navbar-brand" style="color: #ff5400;" id="titulo" th:href="@{/administrador}">
                         ApGames
                         <img src="" alt="" height="20" width="20">
                     </a>
@@ -27,11 +27,11 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <form action="index.php" method="post">
+                                <a href="">
                                     <button class="btn" style="color: #ff5400;" aria-current="page">Home</button>
-                                </form>
+                                </a>
                             </li>
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <form action="index.php" method="post">
                                     <div class="input-group">
                                         <input type="text" list="lista-juegos" id="search" name="search"
@@ -56,37 +56,18 @@
                                     <option value="TresEnRaya">
                                     <option value="Dinosaurio">
                                 </datalist>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="BlackJack">BlackJack</button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="Wordle">Wordle</button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="MemoryGame">MemoryGame</button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="MemoryGame">MemoryGame</button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="MemoryGame">MemoryGame</button>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <form action="index.php" method="post">
-                                    <button class="btn text-light" name="MemoryGame">MemoryGame</button>
-                                </form>
-                            </li> -->
+                            </li>-->
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" style="color: #ff5400;" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Action
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" th:href="@{/productos}">Productos</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
                         </ul>
                     </div>
                 </div>
